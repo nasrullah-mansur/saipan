@@ -1,0 +1,51 @@
+// Select 2;
+.select2-container--default .select2-results__option--selected {
+    background-color: #eee;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: $secondary-color;
+    font-weight: 400;
+}
+
+.select2-results__option--selectable {
+    color: $black;
+    font-family: $titleFont;
+}
+
+
+// Date time picker;
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default, 
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current, 
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div.xdsoft_current {
+    background-color: $primary-color;
+    box-shadow: none;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar th {
+    font-family: $titleFont;
+    color: $secondary-color;
+    font-style: normal;
+}
+
+.xdsoft_datetimepicker .xdsoft_label {
+    font-weight: 400;
+}
+
+.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current {
+    background-color: $primary-color;
+    font-weight: 400;
+    box-shadow: none;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td:hover, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div:hover {
+    background-color: $primary-color !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default, 
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current, 
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div.xdsoft_current {
+    background-color: red;
+}

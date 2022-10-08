@@ -1,0 +1,24 @@
+.preview_img {
+    display: none;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+    float: right;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    float: left;
+}
+
+.action-btn a {
+    margin-right: 5px;
+}
+
+.action-btn a:last-child {
+    margin-right: 0;
+}
+
+.bg-gradient-x-primary {
+    background-image: linear-gradient(to right, #00A5A8 0%, #4DCBCD 100%);
+    background-repeat: repeat-x;
+}

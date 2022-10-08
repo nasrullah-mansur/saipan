@@ -1,0 +1,153 @@
+.header {
+    
+    .top {
+        background-color: $secondary-color;
+        padding: 15px 0;
+
+        .top-content {
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: 767.98px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .phone {
+                ul {
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        display: block;
+                        color: $white;
+                        margin-right: 15px;
+                        transition: $transition;
+
+                        @media (max-width: 767.98px) {
+                            font-size: 14px;
+                        }
+                        
+                        &:hover {
+                            color: $primary-color;
+                        }
+
+                        i {
+                            padding-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            .open {
+                p {
+                    color: $white;
+                    margin: 0;
+
+                    @media (max-width: 767.98px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Main menu;
+    .main-menu {
+        padding: 15px 0;
+
+        .main-menu-content {
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 991.98px) {
+                flex-wrap: wrap;
+            }
+
+            .logo {
+                order: 1;
+                img {
+                    max-width: 180px;
+                }
+            }
+
+            .list {
+                order: 2;
+                margin-left: auto;
+
+                @media (max-width: 991.98px) {
+                    order: 5;
+                    width: 100%;
+                    display: none;
+                }
+
+                ul {
+                    display: flex;
+
+                    @media (max-width: 991.98px) {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    li {
+                        a {
+                            display: block;
+                            margin-left: 5px;
+                            padding: 5px;
+                            color: $black;
+                            font-weight: 500;
+                            font-family: $titleFont;
+                            transition: $transition;
+
+                            &.active,
+                            &:hover {
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .book-btn {
+                order: 3;
+                margin-left: 30px;
+
+                @media (max-width: 991.98px) {
+                    margin-left: auto;
+                }
+
+                a {
+                    display: inline-flex;
+                    width: 120px;
+                    height: 35px;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $primary-color;
+                    color: $white;
+                    font-family: $titleFont;
+                    font-weight: 600;
+                    border-radius: 5px;
+                }
+            }
+
+            .mobile {
+                order: 3;
+                height: 35px;
+                width: 35px;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                background-color: $primary-color;
+                color: $white;
+                margin-left: 5px;
+                cursor: pointer;
+
+                @media (max-width: 991.98px) {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
